@@ -12,36 +12,36 @@ import {
 } from 'lucide-react';
 
 const fadeUp = {
-  hidden:  { opacity: 0, y: 28 },
+  hidden: { opacity: 0, y: 28 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.75, ease: [0.25, 1, 0.5, 1] } }
 };
 
 const stagger = {
-  hidden:  { opacity: 0 },
+  hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
 };
 
 const FEATURED = [
   {
     title: 'Premium Cakes',
-    desc:  'Birthday, Tower, Chocolate, Rasmalai & more — crafted fresh for every celebration.',
+    desc: 'Birthday, Tower, Chocolate, Rasmalai & more — crafted fresh for every celebration.',
     image: '/images/hero_cake.png',
-    icon:  CakeSlice,
-    tag:   'Signature',
+    icon: CakeSlice,
+    tag: 'Signature',
   },
   {
     title: 'Artisan Ice Creams',
-    desc:  'Cool, creamy scoops in classic & exotic flavors. A perfect treat for any season.',
+    desc: 'Cool, creamy scoops in classic & exotic flavors. A perfect treat for any season.',
     image: '/images/ice_cream_display.png',
-    icon:  IceCream,
-    tag:   'Refreshing',
+    icon: IceCream,
+    tag: 'Refreshing',
   },
   {
     title: 'Traditional Sweets',
-    desc:  'Gulab Jamun, Jalebi, Barfi & more — authentic Indian mithai made fresh daily.',
+    desc: 'Gulab Jamun, Jalebi, Barfi & more — authentic Indian mithai made fresh daily.',
     image: '/images/traditional_sweets.png',
-    icon:  Candy,
-    tag:   'Heritage',
+    icon: Candy,
+    tag: 'Heritage',
   },
 ];
 
@@ -104,7 +104,7 @@ export default function HomePage() {
           </motion.div>
         </div>
 
-        <div className="hero__scroll" aria-hidden="true">
+        {/* <div className="hero__scroll" aria-hidden="true">
           <a href="#featured">
             <motion.div
               animate={{ y: [0, 9, 0] }}
@@ -114,7 +114,7 @@ export default function HomePage() {
               <div className="hero__scroll-dot" />
             </motion.div>
           </a>
-        </div>
+        </div>*/}
       </section>
 
 
